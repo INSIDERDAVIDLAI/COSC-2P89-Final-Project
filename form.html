@@ -1,0 +1,39 @@
+<div id="register" class="modal">
+    <form class="modal-content animate" action="admin/register.cgi" method="post">
+      <div class="imgcontainer">
+        <img src="RF.png" alt="Avatar">
+        <center><h1>This is the RF secure register system by insiderdavidlai.</h1></center>
+      </div>
+      <div class="container">
+        <label for="user"><center><h1>Please type your user name here:</h1></center></label>
+        <input type="text" placeholder="Enter Username" name="user" required>
+        <label for="password"><center><h1>And password here:</h1></center></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <label for="answer"><center><h1>Security Question: What's your place of birth?</h1></center></label>
+        <input type="answer" placeholder="Enter Answer of the security question" name="answer" required>
+        <input type="hidden" name="wishlist" id="list"> 
+        <button type="submit">Sign up</button>
+        <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+</div>
+
+
+<div id="login" class="modal">
+    <form class="modal-content animate" action="login.cgi" method="post">
+      <div class="imgcontainer">
+        <img src="RF.png" alt="Avatar">
+        <center><h1>This is the RF secure login system by insiderdavidlai.</h1></center>
+      </div>
+      <div class="container">
+        <label for="user"><center><h1>Please type your user name here:</h1></center></label>
+        <input type="text" placeholder="Enter Username" name="user" required>
+        <label for="password"><center><h1>And password here:</h1></center></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <input type="hidden" name="wishlist" id="list"> 
+        <button type="submit">Login</button>
+        <button type="submit" id="reset" onclick="location='reset.html'">Forget Password</button>
+        <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+</div>

@@ -1,0 +1,36 @@
+<html>
+<link rel="stylesheet" type="text/css" href="newstyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="function.js"></script>
+<body onload="loadAll()">
+<center><img src="chip.png" alt="chip" width="40" height="20"></center>
+<div id="post" class="modal">
+    <form class="modal-content animate" action="admin/post.cgi" method="post">
+      <div class="imgcontainer">
+        <img src="RF.png" alt="Avatar">
+        <center><h1>This is the RF secure product post system by insiderdavidlai.</h1></center>
+      </div>
+      <div class="container">
+        <label for="pid"><center><h1>Product id:</h1></center></label>
+        <input type="text" placeholder="Enter Product id" name="pid" required>
+        <label for="pname"><center><h1>Product name:</h1></center></label>
+        <input type="text" placeholder="Enter Product name" name="pname" required>
+        <label for="pimg"><center><h1>Product image address:</h1></center></label>
+        <input type="text" placeholder="Enter Image address" name="pimg" required>
+        <label for="pdesc"><center><h1>Product description:</h1></center></label>
+        <input type="text" placeholder="Enter Product description" name="pdesc" required>
+        <label for="pPrice"><center><h1>Product price:</h1></center></label>
+        <input type="text" placeholder="Enter product price" name="pPrice" required>
+        <label for="tag"><center><h1>Product tag:</h1></center></label>
+        <input type="text" placeholder="Enter product tag" name="tag" required>
+        <button type="submit">Post Product</button>
+        <button type="button" onclick="window.location.href='admin/psptmanage.cgi'" class="cancelbtn">Cancel post</button>
+        <div class="imgcontainer">
+            <center><h1>COPYRIGHT JIAYANG LAI, ALL RIGHT RESERVED.</h1></center>
+          <img src="lai.png" alt="Avatar">
+        </div>
+      </div>
+    </form>
+</div>
+</html>
+

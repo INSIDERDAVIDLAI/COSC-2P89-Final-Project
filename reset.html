@@ -1,0 +1,28 @@
+<html>
+<link rel="stylesheet" type="text/css" href="newstyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="function.js"></script>
+<body onload="loadAll()">
+<center><img src="chip.png" alt="chip" width="40" height="20"></center>
+<div id="post" class="modal">
+    <form class="modal-content animate" action="admin/reset.cgi" method="post">
+      <div class="imgcontainer">
+        <img src="RF.png" alt="Avatar">
+        <center><h1>Reset Password</h1></center>
+      </div>
+      <div class="container">
+        <label for="user"><center><h1>Your Username</h1></center></label>
+        <input type="text" placeholder="Enter Username" name="user" required>
+        <label for="password"><center><h1>Your security answer</h1></center></label>
+        <input type="password" placeholder="Enter your security answer" name="password" required>
+        <button type="submit">Reset Password</button>
+        <button type="button" onclick="window.location.href='index.php'" class="cancelbtn">Cancel reset</button>
+        <div class="imgcontainer">
+            <center><h1>COPYRIGHT JIAYANG LAI, ALL RIGHT RESERVED.</h1></center>
+          <img src="lai.png" alt="Avatar">
+        </div>
+      </div>
+    </form>
+</div>
+</html>
+
